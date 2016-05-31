@@ -1,0 +1,24 @@
+﻿Repository object that gets and saves items.  Seprates the data access logic from the model.  Contains the logic for how to send and retrieve data.
+
+use overloads for save vs update
+
+OData!
+
+Need to return an IQueryable
+
+Query filter parses and filters the query
+
+Submitted from client application through url as query string params
+
+$top - limit results returned in query
+$skip - skips n results
+$orderby - sorts the results
+$filter - filters results (Like where) - eq Equal, ne Not Equal, gt Greather than, ge Greater than or equal, lt Less than, le Less than or equal, and, or, not
+startswith startswith(PropertyName, string name), endswith endswith(PropertyName, string name), contains contains(PropertyName, string name), tolower tolower(PropertyName, string name)
+$select - select specfic properties
+
+JsonIgnore attribute to not display that property in the json package
+
+Can enable only specific query options  - EnableQuery(AllowedQueryOptions=AllowedQueryOptions.Skip | AllowedQueryOptions.Top)
+
+Can write validate query functions to validate OData queries

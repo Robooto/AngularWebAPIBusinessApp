@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Acme Product Management</title>
+
+    <!-- Style sheets -->
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+</head>
+
+<body ng-app="productManagement">
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <div class="navbar-brand"><a href="" ui-sref="home" class="navbar-brand">Acme Product Management</a></div>
+                <div class="navbar-brand"><a href="" ui-sref="productEdit({productId: 0})"><i class="glyphicon glyphicon-plus"></i> Add Product</a></div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div ui-view></div> 
+        <!--<div ng-include="'app/products/productEditView.html'"></div>-->
+    </div>
+
+    <!-- Library Scripts -->
+    <script src="Scripts/jquery-1.9.1.js"></script>
+    <script src="Scripts/bootstrap.js"></script>
+    <script src="Scripts/angular.js"></script>
+    <script src="Scripts/angular-resource.js"></script>
+    <script src="Scripts/angular-ui-router.js"></script>
+<!-- Application Script -->
+    <script src="app/app.js"></script>
+
+    <!-- Services -->
+    <script src="app/common/common.services.js"></script>
+    <script src="app/common/productResource.js"></script>
+
+    <!-- Product Controllers -->
+    <script src="app/products/productListCtrl.js"></script>
+    <script src="app/products/productEditCtrl.js"></script>
+</body>
+
+</html>
