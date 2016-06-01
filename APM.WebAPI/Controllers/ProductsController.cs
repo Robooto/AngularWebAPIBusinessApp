@@ -35,6 +35,7 @@ namespace APM.WebAPI.Controllers
             
         }
 
+        [Authorize()]
         public IHttpActionResult Get(int id)
         {
 

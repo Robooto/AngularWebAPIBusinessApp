@@ -13,7 +13,7 @@
         vm.product = {};
         vm.message = '';
 
-        productResource.get({ id: $stateParams.productId },
+        productResource.get({ id: 1 },
             function (data) {
                 vm.product = data;
                 vm.originalProduct = angular.copy(data);
