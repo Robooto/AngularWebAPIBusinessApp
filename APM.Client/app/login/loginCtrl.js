@@ -3,10 +3,10 @@
 
     angular
         .module("productManagement")
-        .controller("MainCtrl", MainCtrl);
-    MainCtrl.$inject = ["userAccount", "currentUser"];
+        .controller("LoginCtrl", LoginCtrl);
+    LoginCtrl.$inject = ["userAccount", "currentUser", "$state"];
 
-    function MainCtrl(userAccount, currentUser) {
+    function LoginCtrl(userAccount, currentUser, $state) {
         var vm = this;
 
         vm.isLoggedIn = function () {
@@ -51,6 +51,7 @@
                     vm.password = "";
                     vm.token = data.access_token;
                     currentUser.setProfile(vm.userData.userName, data.access_token);
+                    $state.go("products");
                 },
                 function (response) {
                     vm.password = "";

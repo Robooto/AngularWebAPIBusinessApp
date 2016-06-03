@@ -8,7 +8,7 @@
 
     ProductEditCtrl.$inject = ["productResource", "$state", "$stateParams"];
 
-    function ProductEditCtrl(productResource, $state, $stateParams) {
+    function ProductEditCtrl (productResource, $state, $stateParams) {
         var vm = this;
         vm.product = {};
         vm.message = '';
@@ -38,7 +38,7 @@
                 vm.product.$update({ id: vm.product.productId },
                     function (data) {
                         vm.message = "... Save Complete";
-                        $state.go('home');
+                        $state.go('products');
                     },
                     function (response) {
                         vm.message = response.statusText + "\r\n";
@@ -75,7 +75,7 @@
             editForm.$setPristine();
             vm.product = angular.copy(vm.originalProduct);
             vm.message = "";
-            $state.go('home');
+            $state.go('products');
         };
 
     }

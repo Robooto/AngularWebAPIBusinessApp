@@ -50,7 +50,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\APM.Common\APM.Common.csproj">
-      <Project>{f334a2df-6559-4fb2-9059-c18911b4ce0a}</Project>
+      <Project>{F334A2DF-6559-4FB2-9059-C18911B4CE0A}</Project>
       <Name>APM.Common</Name>
     </ProjectReference>
     <ProjectReference Include="..\APM.DAL\APM.DAL.csproj">

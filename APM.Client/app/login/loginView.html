@@ -1,0 +1,11 @@
+                <form action="" class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input type="text" class="form-control" type="text" placeholder="username (email)" ng-model="vm.userData.email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control" placehold="password" ng-model="vm.userData.password">
+                    </div>
+                    <button class="btn btn-default" type="submit" ng-click="vm.login()">Login</button>
+                    <button class="btn btn-default" type="submit" ng-click="vm.registerUser()">Register</button>
+                    <div ng-show="vm.message">{{vm.message}}</div>
+                </form>

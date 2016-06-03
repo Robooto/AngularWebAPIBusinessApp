@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace APM.BAL
+namespace APM.Common
 {
 
     public class Product

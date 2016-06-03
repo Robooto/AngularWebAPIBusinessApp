@@ -295,7 +295,7 @@
       <Name>APM.BAL</Name>
     </ProjectReference>
     <ProjectReference Include="..\APM.Common\APM.Common.csproj">
-      <Project>{F334A2DF-6559-4FB2-9059-C18911B4CE0A}</Project>
+      <Project>{f334a2df-6559-4fb2-9059-c18911b4ce0a}</Project>
       <Name>APM.Common</Name>
     </ProjectReference>
   </ItemGroup>
